@@ -1,1 +1,0 @@
-# snbt-simulator
