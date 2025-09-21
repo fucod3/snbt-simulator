@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SNBT Simulator - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .welcome-container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .welcome-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .welcome-text {
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .welcome-btn {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="title">SNBT Simulator</div>
+    </div>
+
+    <div class="welcome-container">
+      <div class="welcome-title">Selamat Datang di Simulasi SNBT</div>
+      <div class="welcome-text">
+        Simulasi ini berisi 160 soal dengan durasi <b>3 jam 15 menit</b>.<br>
+        Pastikan kamu berada di tempat yang tenang dan siap fokus.<br>
+        Tekan tombol di bawah untuk memulai, timer akan langsung berjalan.
+      </div>
+      <button class="btn btn-primary welcome-btn" onclick="startSimulation()">Mulai Simulasi</button>
+    </div>
+
+    <div class="footer">
+      SNBT Simulator - Persiapkan dirimu sebaik mungkin
+    </div>
+  </div>
+
+  <script>
+    function startSimulation() {
+      localStorage.removeItem('snbtProgress');
+      window.location.href = "simulator.html";
+    }
+  </script>
+</body>
+</html>

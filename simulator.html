@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SNBT Simulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="title">SNBT Simulator</div>
+      <div class="stats">
+        <div id="timer">00:00:00</div>
+        <div id="qcount">Soal 0/0</div>
+      </div>
+    </div>
+    
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressbar" style="width: 0%"></div>
+      </div>
+    </div>
+    
+    <div class="question-container" id="question-container">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div>Memuat soal...</div>
+      </div>
+    </div>
+    
+    <div class="navigation">
+      <div class="nav-buttons">
+        <button class="btn" id="prev" disabled>Sebelumnya</button>
+        <button class="btn" id="next" disabled>Selanjutnya</button>
+      </div>
+      
+      <div class="action-buttons">
+        <button class="btn" id="mark" disabled>Tandai</button>
+        <button class="btn btn-primary" id="submit" disabled>Submit</button>
+      </div>
+    </div>
+    
+    <div class="review-section">
+      <div class="review-title">Navigasi Soal</div>
+      <div class="review-grid" id="review-grid">
+      </div>
+    </div>
+    
+    <div class="footer">
+      SNBT Simulator - Tekan tombol panah untuk navigasi cepat
+    </div>
+  </div>
+
+  <script src="soal.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
